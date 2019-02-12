@@ -1,0 +1,26 @@
+body {font-family: "Times New Roman", Times, serif; background-color: rgb(150, 150, 150)}
+h1 {font-size: 70px;color:rgb(0, 88, 170)}
+p { border:1px solid grey;
+    padding:10px;
+    margin:30px;
+    font-size:150%;
+    background-color:rgb(32, 107, 117); color:rgb(255, 255, 255);
+}
+pre{color: white}
+#home{font-family: 'Courier New', Courier, monospace}
+
+a:link{
+    color:black;
+    background-color: transparent;
+    text-decoration:none;}
+
+a:visited {
+  color:rgb(251, 255, 0);
+  background-color: transparent;
+  text-decoration: underline;
+}  
+a:hover {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: underline;
+  }
