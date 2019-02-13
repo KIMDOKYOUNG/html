@@ -1,25 +1,67 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta http-equiv="Content-Type";content="text/html; charset="utf-8">
         <title>maded by dokyoung</title>
             <!--External-->
         <link rel="stylesheet" href="styles.css">
-       
+
+        <meta name="author" content="Kim dokyoung">
+        <meta http-equiv="refresh" content="30">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
     </head>
     <body>
         <h1 style="text-align: center">KIM DOKYOUNG</h1>
-        <hr>
-        <p style="text-align: center">Hallym university 
-                Chinese Studies / Convergence Program of Digital Arts & Humanities</p>
-        <hr>
-        
-        <ol>
+        <div>
+        <ul>
             <li><a href="page1.html" target="_self">page1</a></li>
             <li><a href="page2.html" target="_self">page2</a></li>
             <li><a href="image_gallery.html" target="_blank">image_gallery</a></li>
-            <li><a href="my boyfriend.html" target="_self">my boyfriend</a></li>
+            <li><a href="my boyfriend.html" target="_self">my boyfriend&hearts;</a></li>
+            <li><a href="table.html" target="_blank">환율</a></li>
+            <li><a href="javascript_exercise.html" target="_blank">javascript_exercise</a></li>
+            <li><a href="cat.html" target="_blank">cat</a></li>
+            <li><a href="layout.html" target="_blank">layout</a></li>
             <li><a href="https://www.instagram.com/mimisoso0117/" target="_blank">instagram</a></li>
+        </ul>
+        </div>
+        <hr>
+        <div>
+        <p style="text-align: center">Hallym university &nbsp
+                &ltChinese Studies / Convergence Program of Digital Arts & Humanities&gt</p>
+        <hr>
+        </div>
+        <div>
+            <p id="time">  time : </p>
+            <script>
+                document.getElementById("time").innerHTML = Date()
+                </script>
+                <h2>HTML Forms</h2>
 
-        </ol>
+                <form action="/action_page.php">
+                    <fieldset>
+                            <legend>Personal information:</legend>
+                  First name:<br>
+                  <input type="text" name="firstname" value="Mickey">
+                  <br>
+                  Last name:<br>
+                  <input type="text" name="lastname" value="Mouse">
+                  <br><br>
+                  <input type="submit" value="Submit">
+                    </fieldset>
+                </form> 
+                <h2>Radio Buttons</h2>
+
+                    <form>
+                    <fieldset>
+                    <input type="radio" name="gender" value="male" checked> Male<br>
+                    <input type="radio" name="gender" value="female"> Female<br>
+                    <input type="radio" name="gender" value="other"> Other  
+                    </fieldset>
+                    </form> 
+               
+        </div>
+
     </body>
 </html>

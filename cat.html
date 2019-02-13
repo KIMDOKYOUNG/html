@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type";content="text/html; charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    <body>
+        <div>
+        <h2 id="home"><a href="index.html"><img src="http://www.hallym.ac.kr/.resources/hallym_univ_theme/hallym/ko/img/common/logo-white.png"></a></h2>
+        </div>
+        <div>
+            
+            <div>
+                <div align="center">
+                    <img id="picture" src="image/cat1.jpg" height="500px" style="align:center"/>
+                
+                </div>
+                <div align="center" style="clear:both">
+                <button onmousemove="func1()" style="border:none;background: none"> <img id="picture" src="image/cat1.jpg" height="200px"> </button>
+                <button onmousemove="func2()" style="border:none;background:none"> <img id="picture" src="image/cat2.jpg" height="200px"> </button>
+                <button onmousemove="func3()" style="border:none;background:none"> <img id="picture" src="image/cat3.jpeg" height="200px"> </button>
+                <button onmousemove="func4()" style="border:none;background: none"> <img id="picture" src="image/cat4.jpg" height="200px"> </button>
+                <button onmousemove="func5()" style="border:none;background: none"> <img id="picture" src="image/cat5.gif" height="200px"> </button>
+                </div>
+                <script>
+                    demo = document.getElementById("demo")
+                    picture = document.getElementById("picture")
+                    function func1(){
+                        picture.src = "image/cat1.jpg"    
+                    }
+                    function func2(){
+                        picture.src = "image/cat2.jpg" 
+                    }  
+                    function func3(){
+                        picture.src = "image/cat3.jpeg"    
+                    }
+                    function func4(){
+                        picture.src = "image/cat4.jpg"   
+                    }
+                    function func5(){
+                        picture.src = "image/cat5.gif"   
+                    }
+                </script>
+            </div>
+        </div>
+     
+    </body>
+</html>

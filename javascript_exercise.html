@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type";content="text/html; charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+    </head>
+    <body>
+        <div>
+        <h2 id="home"><a href="index.html"><img src="http://www.hallym.ac.kr/.resources/hallym_univ_theme/hallym/ko/img/common/logo-white.png"></a></h2>
+        </div>
+        <div>
+            <h1> javascript</h1>
+            <div>
+                <div>
+                    <img id="picture" src="image/cat1.jpg" height="300px" style="float:left"/>
+                    <span id="demo" style="font-size:30px"> 닝겐 버튼을 눌러보라우 <br> 날래 눌러보라우 </span>
+                </div>
+                <div style="clear:both">
+                <button onclick="func1()" > button 1 </button>
+                <button onclick="func2()" > button 2 </button>
+                </div>
+                <script>
+                    demo = document.getElementById("demo")
+                    picture = document.getElementById("picture")
+                    function func1(){
+                        picture.src = "image/cat2.jpg"
+                        demo.innerHTML = "뭘봐?"
+                        demo.style.fontSize = "20px"
+                        demo.style.color = "black"
+                        demo.style.backgroundColor = "yellow"
+                        demo.style.textAlign = "center"
+                    }
+                    function func2(){
+                        picture.src = "image/cat3.jpeg"
+                        demo.innerHTML = "졸리다 냥"
+                        demo.style.fontSize = "20px"
+                        demo.style.color = "yellow"
+                        demo.style.backgroundColor = "black"
+                        demo.style.textAlign = "center"
+                    }
+                </script>
+            </div>
+        </div>
+     
+    </body>
+</html>
