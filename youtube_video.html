@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type";content="text/html; charset="utf-8">
+        <title>maded by dokyoung</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!--External-->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body style="background-image:url('image/배경.jpg'); background-size:cover;">
+        <h2 id="home"><a href="index.html"><img src="http://www.hallym.ac.kr/.resources/hallym_univ_theme/hallym/ko/img/common/logo-white.png"></a></h2>
+        <h1>YOUTUBE</h1>
+        <iframe  width="560" height="315" src="https://www.youtube.com/embed/xSJg_GlF0UA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <p>Click the button to get your coordinates.</p>
+
+        <button onclick="getLocation()">Try It</button>
+        
+        <p id="demo"></p>
+        
+        <script>
+        var x = document.getElementById("demo");
+        
+        function getLocation() {
+          if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+          } else { 
+            x.innerHTML = "Geolocation is not supported by this browser.";
+          }
+        }
+        
+        function showPosition(position) {
+          x.innerHTML = "Latitude: " + position.coords.latitude + 
+          "<br>Longitude: " + position.coords.longitude;
+        }
+        </script>
+
+
+    </body>
+</html>
