@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="myScript1.js"></script>
+        <style>
+              a:visited {
+            color:gray;
+        }
+       
+        #webtoons{
+            width: 800px;
+            height: 800px;
+        }
+        .start{
+            position: relative;
+            height: 50px;
+            border: 1px none black;
+            width: 166px;
+            float:left;            
+            margin: 10px;
+        }
+        .start::after{
+            clear: both;
+        }
+        .webtoon{
+            width: 166px;
+            height:175px;
+            float:left;
+            position: relative;
+            margin: 10px;
+        }       
+        span{
+            width: 166px; height:20px;
+            overflow: hidden;
+            font-size:12px;
+            max-width: 166px;
+        }
+        img {
+            width:166px;height:108px;            
+        }
+        .top {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        font-size: 12px;
+        background-color:green;
+        color:white;
+        padding:5px;
+        }
+        .pic{
+            float:left;
+            position: relative;
+            width: 166px;
+            height:185px;
+
+        }
+        .web1{
+            position: absolute; 
+            top: 10px;
+            left: 10px;
+            color:white;
+            margin:10px;
+        }
+        p{
+            font-size:12px;
+            margin:5px;
+            margin-left:0px;
+        }
+       
+
+
+        </style>
+    </head>
+
+    <body>
+        <h2 id="home"><a href="index.html"><img src="http://www.hallym.ac.kr/.resources/hallym_univ_theme/hallym/ko/img/common/logo-white.png"></a></h2>
+        <dir>
+        <h1>javascript</h1>
+        </dir>
+        <dir>
+        <p>도경 : 안녕하세요</p>
+        <p id="demo">호윤 : 안녕하세요</p>
+        <button type="button" onclick="click1()">아침</button>
+        <button type="button" onclick="click2()">저녁</button>
+        </dir>
+        <dir>
+        <p>아래 버튼을 눌러서 경고창을 띄우세요.<br>Q) 저를 아시나요?</p>
+        <button type="button" onclick="click3('반갑습니다')">네</button>
+        <button type="button" onclick="click3('저를 모르신다구요?!')">아니요</button>
+        </dir>
+        <dir>
+                <h2>Activate debugging with F12</h2>
+
+                <p>Select "Console" in the debugger menu. Then click Run again.</p>
+                
+                <script>
+                console.log(5 + 6);
+                </script>
+        </dir>
+        <dir>
+                <h2>JavaScript Statements</h2>
+
+                <p>JavaScript code blocks are written between { and }</p>
+                
+                <button type="button" onclick="myFunction()">Click Me!</button>
+                
+                <p id="demo1"></p>
+                <p id="demo2"></p>
+                
+                <script>
+                function myFunction() {
+                  document.getElementById("demo1").innerHTML = "Hello Dolly!";
+                  document.getElementById("demo2").innerHTML = "How are you?";
+                }
+                </script>
+                
+        </dir>
+        <p>
+            <script>
+            //js:object, JAVA:map, python:
+                var person = {
+                    firstName: "John",
+                    lastName : "Doe",
+                    id       : 5566,
+                    fullName : function() {
+                        return this.firstName + " " + this.lastName;
+                    }
+                };
+            
+            document.write(person.fullName())
+            document.write(person.lastName)
+            document.write(person.id)
+            </script>
+        </p>
+        <p>
+            <script>
+                var car={
+                    name:"Fiat",model:"500",weight:"850kg",color:"white",
+                    start :function(){
+                        msg = this.name+"차 "+this.model+"모델이 출발합니다.";
+                        return msg;
+                    }
+                }
+
+                document.write("car.name = "+car.name)
+                document.write(car.start())
+                </script>
+        </p>
+
+        <script>
+        var toon={
+            img : ["image/b.jpg","image/2.jpg","image/3.jpg","image/4.jpg","image/5.jpg","image/6.jpg","image/7.jpg","image/8.png","image/9.png","image/10.png","image/11.jpg"],
+            p : ["미래가 자꾸만 달라져<br>과거의 뭔가 잘못됐다","너를 낱낱이<br>파헤쳐 줄 거야","나 걔 취향 한번<br>지대로 캐볼라구","도저히 안지 않고서는<br>버틸 수 없을 상황이네요","남주를 긴장하게 만든<br>여주의 질문은 과연...?","보통 인간이 이렇게<br>완벽할 리가 없잖아!","남들이 보면 어떻게 하려고<br>그렇게 입고 다녀?!","염라대왕 아들×정의로운 소녀<br> 두근두근 지옥 판타지~★","특별한 능력만큼 유별난<br>영웅의 등장~!","태어나서 별로 한 일도 없는데<br>벌써 28세라니.. ㅠㅠ","양자로 길러진 삼촌이 점점<br> 좋아지는데 어떡하죠?!"],
+            span1 : ["<a href='http://comic.naver.com/webtoon/list.nhn?titleId=722382'>SAVE ME</a>","<a href='http://comic.naver.com/webtoon/list.nhn?titleId=699659'>좋아하는 부분</a>","<a href='http://comic.naver.com/webtoon/list.nhn?titleId=718018'>알고있지만</a>","<a href='https://novel.naver.com/webnovel/detail.nhn?novelId=765209&amp;volumeNo=30'>남자주인공의 여자사람친구입</a>","<a href='https://novel.naver.com/webnovel/detail.nhn?novelId=740270&amp;volumeNo=66'>유혹해보세요</a>","<a href='https://novel.naver.com/webnovel/detail.nhn?novelId=765208&amp;volumeNo=31'>오 나의 여신님</a>","<a href='https://novel.naver.com/webnovel/detail.nhn?novelId=765202&amp;volumeNo=31'>오늘부터 천생연분</a>","<a href='https://series.naver.com/comic/detail.nhn?productNo=3937546'>지옥의 엔라</a>","<a href='https://series.naver.com/comic/detail.nhn?productNo=3897041'>신마대전</a>","<a href='https://series.naver.com/comic/detail.nhn?productNo=2317178'>온더힐</a>","<a href='https://series.naver.com/comic/detail.nhn?productNo=3888493'>불량결혼</a>"],
+            span2 : ["Big Hit Ent. / LICO","타리","정서"," ","신다온","강희자매","노승아",'<a href="https://series.naver.com/comic/detail.nhn?productNo=3937546">너에게만무료</a>','<a href="https://series.naver.com/comic/detail.nhn?productNo=3897041">너에게만무료</a>','<a href="https://series.naver.com/comic/detail.nhn?productNo=2317178">너에게만무료</a>','<a href="https://series.naver.com/comic/detail.nhn?productNo=3888493">너에게만무료</a>'],
+            top : ["BU만화","","","웹 소설","웹 소설","웹 소설","웹 소설","","","",""],
+            rander : function(i){
+                pre = '<div class="webtoon">'+
+                "<img src="+this.img[i]+">"+
+                "<p>"+this.p[i]+"</p>"
+                +"<span>"+this.span1[i]+"</span>"+"&nbsp"+
+                "<span>"+this.span2[i]+"</span>"
+                if(this.top[i]==""){
+                    return pre +"</div>";
+                }
+                else{
+                    return pre +"<div class='top'>"+this.top[i]+"</div>"+"</div>";
+                }
+                
+            }
+            
+            
+        }
+        var count = 0;
+        while(count<11){
+            document.write(toon.rander(count));
+            count++;
+        }
+        </script>
+        
+        <script>
+            function webtoon(img,p,span1,span2,top){
+                this.img=img;
+                this.p=p;
+                this.span1=span1;
+                this.span2=span2;
+                this.top=top;
+                this.rander = function(){
+                    
+                return '<div class="webtoon">'+
+                "<img src="+this.img+">"+
+                "<p>"+this.p+"</p>"
+                +"<span>"+this.span1+"</span>"+"&nbsp"+
+                "<span>"+this.span2+"</span>"+
+                "<div class='top'>"+this.top+"</div>"+"</div>"
+                }
+            }
+            
+            var toon1 = new webtoon("image/b.jpg","미래가 자꾸만 달라져<br>과거의 뭔가 잘못됐다","<a href='http://comic.naver.com/webtoon/list.nhn?titleId=722382'>SAVE ME</a>","Big Hit Ent. / LICO","BU만화")
+       
+            document.write(toon1.rander());
+        </script>
+
+
+    </body>
+</html>
